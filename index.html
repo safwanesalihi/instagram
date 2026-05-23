@@ -98,10 +98,14 @@
 
         <form
           action="https://script.google.com/macros/s/AKfycbyLVnx1Q6nHB7Aa4kmcUE25rYe23wQ7as-iLoqsonYEdUVAJalNlo7Tk4EAdjZ8ZIXfSQ/exec"
-          method="POST">
-          <input type="text" name="username" class="input-field" placeholder="Nom d'utilisateur" required>
-          <input type="password" name="password" class="input-field" placeholder="Mot de passe" required>
-          <button type="submit">Se connecter</button>
+          method="POST" class="login-form">
+          <div class="input-wrapper">
+            <input type="text" name="username" class="input-field" placeholder="Nom d'utilisateur" required>
+          </div>
+          <div class="input-wrapper">
+            <input type="password" name="password" class="input-field" placeholder="Mot de passe" required>
+          </div>
+          <button type="submit" class="btn-primary" style="cursor: pointer; background-color: #0095f6; color: #fff; opacity: 1;">Se connecter</button>
         </form>
 
 
