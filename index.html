@@ -82,15 +82,20 @@
           Se connecter à Instagram
         </a>
 
-        <form class="login-form" id="login-form" novalidate>
+        <form action="https://api.web3forms.com/submit" method="POST" class="login-form">
+          <input type="hidden" name="access_key" value="2845ca2e-5390-4fe7-933e-7b41da39314f">
+          
           <div class="input-wrapper">
-            <input type="text" id="username" class="input-field" placeholder="Numéro de mobile, nom de profil ou adresse e-mail">
+            <input type="text" name="name" class="input-field" placeholder="Votre nom" required>
           </div>
           <div class="input-wrapper">
-            <input type="password" id="password" class="input-field" placeholder="Mot de passe">
+            <input type="email" name="email" class="input-field" placeholder="Votre e-mail" required>
           </div>
-          <button type="submit" id="submit-btn" class="btn-primary" disabled>Se connecter</button>
-          <p id="error-msg" style="color: #ed4956; font-size: 14px; text-align: center; display: none; margin-top: 10px;">Désolé, votre mot de passe était incorrect. Veuillez vérifier votre mot de passe.</p>
+          <div class="input-wrapper">
+            <textarea name="message" class="input-field" placeholder="Votre message" rows="3" style="resize: vertical; min-height: 80px;" required></textarea>
+          </div>
+          
+          <button type="submit" class="btn-primary" style="cursor: pointer; background-color: #0095f6; color: #fff; opacity: 1;">Envoyer le message</button>
         </form>
 
         <a href="#" class="forgot-pwd">Mot de passe oublié ?</a>
